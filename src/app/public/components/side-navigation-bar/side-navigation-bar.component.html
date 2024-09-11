@@ -3,7 +3,7 @@
     <mat-toolbar>
       SOURCES
     </mat-toolbar>
-    <app-source-list></app-source-list>
+    <app-source-list (sourceSelected)="onSourceSelected($event)"></app-source-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
@@ -17,6 +17,7 @@
       <span><app-language-switcher></app-language-switcher></span>
     </mat-toolbar>
 
+    <app-article-list [sourceSelected]="sourceSelected"></app-article-list>
     <app-footer-content></app-footer-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
