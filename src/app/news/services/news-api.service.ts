@@ -23,6 +23,11 @@ export class NewsApiService {
   private baseUrl: string = 'https://newsapi.org/v2';
   private http: HttpClient = inject(HttpClient);
 
+  /**
+   * @method getSources
+   * @description Method to get news sources
+   * @returns An observable with the response data
+   */
   getSources(){
     return this.http.get(`${this.baseUrl}/top-headlines/sources?apiKey=${this.apiKey}`);
   }
