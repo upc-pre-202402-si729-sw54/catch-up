@@ -1,3 +1,13 @@
+/**
+ * Source entity class
+ * @class Source
+ * @description Entity class for source
+ * @property {string} id - The id of the source
+ * @property {string} name - The name of the source
+ * @property {string} url - The url of the source
+ * @property {string} urlToLogo - The url to the logo of the source
+ *
+ */
 export class Source {
   id: string;
   name: string;
