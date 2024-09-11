@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ article.title }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="article.urlToImage" alt="{{ article.title }}">
+  <mat-card-content>
+    <p>{{ article.description }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button target="_blank" [href]="article.url">Read More</a>
+  </mat-card-actions>
+</mat-card>
