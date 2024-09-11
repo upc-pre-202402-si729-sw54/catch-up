@@ -16,7 +16,7 @@ export class NewsApiService {
   }
 
   getArticlesBySourceId(sourceId: string){
-    return this.http.get(`${this.baseUrl}/top-headlines/sources=${sourceId}&apiKey=${this.apiKey}`);
+    return this.http.get(`${this.baseUrl}/top-headlines?sources=${sourceId}&apiKey=${this.apiKey}`);
   }
 
   initArticles(){
