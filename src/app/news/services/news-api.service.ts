@@ -28,15 +28,15 @@ export class NewsApiService {
    * @description Method to get news sources
    * @returns An observable with the response data
    */
-  getSources(){
+  getSources() {
     return this.http.get(`${this.baseUrl}/top-headlines/sources?apiKey=${this.apiKey}`);
   }
 
-  getArticlesBySourceId(sourceId: string){
+  getArticlesBySourceId(sourceId: string) {
     return this.http.get(`${this.baseUrl}/top-headlines?sources=${sourceId}&apiKey=${this.apiKey}`);
   }
 
-  initArticles(){
+  initArticles() {
     return this.getArticlesBySourceId('bbc-news');
   }
 }
