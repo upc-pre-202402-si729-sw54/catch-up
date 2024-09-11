@@ -5,6 +5,7 @@ import {MatIconButton} from "@angular/material/button";
 import {MatIcon} from "@angular/material/icon";
 import {LanguageSwitcherComponent} from "../language-switcher/language-switcher.component";
 import {FooterContentComponent} from "../footer-content/footer-content.component";
+import {SourceListComponent} from "../../../news/components/source-list/source-list.component";
 
 @Component({
   selector: 'app-side-navigation-bar',
@@ -17,7 +18,8 @@ import {FooterContentComponent} from "../footer-content/footer-content.component
     MatIconButton,
     MatIcon,
     LanguageSwitcherComponent,
-    FooterContentComponent
+    FooterContentComponent,
+    SourceListComponent
   ],
   templateUrl: './side-navigation-bar.component.html',
   styleUrl: './side-navigation-bar.component.css'
